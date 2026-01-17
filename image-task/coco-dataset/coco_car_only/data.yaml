@@ -1,0 +1,7 @@
+path: /home/syifa/pnu-challenge/image-task/coco-dataset/coco_car_only
+train: /home/syifa/pnu-challenge/image-task/coco-dataset/coco_car_only/images/train
+val: /home/syifa/pnu-challenge/image-task/coco-dataset/coco_car_only/images/val
+
+nc: 1
+names:
+  0: car

@@ -1,8 +1,11 @@
 .venv
 __pycache__
 runs/
-image-task/coco-dataset/
-image-task/indonesia-dataset/
+image-task/indonesia-dataset/images
+image-task/indonesia-dataset/labels
+image-task/indonesia-dataset/images-with-bb
+
 *.pyc
 .DS_Store
 .ipynb_checkpoints
+models/car_detection_*
