@@ -1,0 +1,16 @@
+{
+    "model_name": "vit_b_16",
+    "backbone": "vit",
+    "epoch": 2,
+    "accuracy": 0.5551330798479087,
+    "macro_f1": 0.6126474336311483,
+    "classes": [
+        "sedan",
+        "mpv",
+        "suv",
+        "pickup",
+        "truck",
+        "bus"
+    ],
+    "timestamp": "2026-01-27 13:40:26"
+}

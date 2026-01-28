@@ -1,0 +1,16 @@
+{
+    "model_name": "resnet50",
+    "backbone": "cnn",
+    "epoch": 1,
+    "accuracy": 0.4866920152091255,
+    "macro_f1": 0.5249328113151939,
+    "classes": [
+        "sedan",
+        "mpv",
+        "suv",
+        "pickup",
+        "truck",
+        "bus"
+    ],
+    "timestamp": "2026-01-27 13:22:47"
+}
