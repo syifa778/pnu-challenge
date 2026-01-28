@@ -16,7 +16,7 @@ wget http://images.cocodataset.org/zips/train2017.zip && wget http://images.coco
 # Unzip Dataset
 unzip train2017.zip && rm train2017.zip && unzip val2017.zip && rm val2017.zip && unzip annotations_trainval2017.zip && rm annotations_trainval2017.zip
 
-# Extract Car Only 
+# Extract Car Only (car, bus, truck) 
 uv run coco_car_only_extractor.py
 
 # Expected output
@@ -28,6 +28,8 @@ uv run coco_car_only_extractor.py
 ```
 
 ### Indonesia Car CCTV Dataset
+
+[CCTV Indonesia Videos](https://drive.google.com/drive/folders/1pK8SQ-aluYJSzkJV1dlgpulXsVDK7oSq?usp=sharing)
 
 ```bash
 # Frame Sampling
@@ -45,6 +47,19 @@ uv run cctv_frame_sampler.py --video ./cctv-videos/yogya.mp4 --output ./cctv-ima
 # pvj-bandung: 3657 → train=2194, val=731, test=732
 ```
 
+### Classification Dataset
+[Label Studio Result](https://drive.google.com/drive/folders/1pK8SQ-aluYJSzkJV1dlgpulXsVDK7oSq?usp=sharing)
+
+``` bash
+  car_type  total_annotations  
+0      bus                 45      
+1      mpv                542      
+2   pickup                 79       
+3    sedan                193       
+4      suv                395       
+5    truck                 61      
+```
+
 ### Car Detection Overall Pipeline for both YOLO and RT-DETR Stage 1, 2, 3 : Frozen backbone, Full fine-tuning, and Full fine-tuning
 ```bash
 uv run od_pipeline.py
@@ -56,6 +71,7 @@ uv run train_eval_classification.py
 ```
 
 ### Testing Detection and Classification
+Final model: yolov10m-based detection and vitb16-based classification
 ```bash
 uv run testing.py
 ```
