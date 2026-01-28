@@ -74,9 +74,9 @@ def train_model_stages(model_config):
     
     print(f"[{model_name}] Training complete. Car-specialized model ready.")
 
-# # Train all models
-# for model_config in MODELS_TO_TRAIN:
-#     train_model_stages(model_config)
+# Train all models
+for model_config in MODELS_TO_TRAIN:
+    train_model_stages(model_config)
 
 
 # =====================
@@ -158,8 +158,8 @@ def auto_label_images(model_config):
     
     print(f"[{model_name}] Auto-labeling completed")
 
-# for model_config in MODELS_TO_TRAIN:
-#     auto_label_images(model_config)
+for model_config in MODELS_TO_TRAIN:
+    auto_label_images(model_config)
 
 
 # =====================
@@ -220,8 +220,8 @@ def split_dataset(model_config):
     
     print(f"[{model_name}] Dataset split completed")
 
-# for model_config in MODELS_TO_TRAIN:
-#     split_dataset(model_config)
+for model_config in MODELS_TO_TRAIN:
+    split_dataset(model_config)
 
 
 # =====================
@@ -271,8 +271,8 @@ def train_on_indonesia_dataset(model_config):
     )
     print(f"[{model_name}] Training on Indonesia dataset completed.")
 
-# for model_config in MODELS_TO_TRAIN:
-#     train_on_indonesia_dataset(model_config)
+for model_config in MODELS_TO_TRAIN:
+    train_on_indonesia_dataset(model_config)
 
 # =====================
 # PREDICTION / INFERENCE FOR ALL MODELS
