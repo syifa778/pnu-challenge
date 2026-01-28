@@ -1,6 +1,9 @@
 .venv
 __pycache__
 runs/
+image-task/runs
+image-task/coco-dataset
+*.zip
 image-task/indonesia-dataset/images
 image-task/indonesia-dataset/labels
 image-task/indonesia-dataset/images-with-bb
@@ -8,4 +11,8 @@ image-task/indonesia-dataset/images-with-bb
 *.pyc
 .DS_Store
 .ipynb_checkpoints
-models/car_detection_*
+image-task/models
+image-task/indonesia-dataset
+
+image-task/label_studio_data
+*.zip
