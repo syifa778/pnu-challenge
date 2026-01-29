@@ -13,6 +13,9 @@ image-task/coco-dataset/coco_car_only/images
 image-task/coco-dataset/coco_car_only/labels
 image-task/coco-dataset/train2017
 image-task/coco-dataset/val2017
+llm-task/datasets
+llm-task/vector_store
+llm-task/data
 *.zip
 *.pth
 *.pt
