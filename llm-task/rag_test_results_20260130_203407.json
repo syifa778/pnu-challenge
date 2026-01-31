@@ -1,0 +1,818 @@
+{
+  "test_metadata": {
+    "timestamp": "2026-01-30 20:34:07",
+    "total_tests": 21,
+    "passed_tests": 12,
+    "failed_tests": 9,
+    "pass_rate": 57.14,
+    "average_relevance_score": 62.86
+  },
+  "results_by_type": {
+    "cve": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0,
+      "avg_relevance": 100.0
+    },
+    "cwe": {
+      "total": 4,
+      "passed": 0,
+      "failed": 4,
+      "avg_relevance": 0.0
+    },
+    "persona": {
+      "total": 8,
+      "passed": 3,
+      "failed": 5,
+      "avg_relevance": 52.5
+    }
+  },
+  "failed_tests": [
+    {
+      "description": "Specific CWE ID lookup",
+      "query": "CWE-451",
+      "expected_type": "cwe",
+      "relevance_score": 0.0,
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'"
+    },
+    {
+      "description": "Authentication weakness pattern",
+      "query": "improper authentication weakness",
+      "expected_type": "cwe",
+      "relevance_score": 0.0,
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'"
+    },
+    {
+      "description": "XSS weakness pattern",
+      "query": "cross-site scripting weakness",
+      "expected_type": "cwe",
+      "relevance_score": 0.0,
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'"
+    },
+    {
+      "description": "Specific XSS CWE",
+      "query": "CWE-79 XSS",
+      "expected_type": "cwe",
+      "relevance_score": 0.0,
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'"
+    },
+    {
+      "description": "Person by full name",
+      "query": "Alicia Mosquera",
+      "expected_type": "persona",
+      "relevance_score": 40.0,
+      "reason": "Low relevance: only 2/5 results match expected type 'persona'"
+    },
+    {
+      "description": "Another person by name",
+      "query": "William Wood",
+      "expected_type": "persona",
+      "relevance_score": 0.0,
+      "reason": "Low relevance: only 0/5 results match expected type 'persona'"
+    },
+    {
+      "description": "Person by name and nationality",
+      "query": "Sean Buckley Irish",
+      "expected_type": "persona",
+      "relevance_score": 40.0,
+      "reason": "Low relevance: only 2/5 results match expected type 'persona'"
+    },
+    {
+      "description": "Person associated with email",
+      "query": "Kim Boissiere",
+      "expected_type": "persona",
+      "relevance_score": 20.0,
+      "reason": "Low relevance: only 1/5 results match expected type 'persona'"
+    },
+    {
+      "description": "Expertise query (should return persona)",
+      "query": "expert in cybersecurity",
+      "expected_type": "persona",
+      "relevance_score": 20.0,
+      "reason": "Low relevance: only 1/5 results match expected type 'persona'"
+    }
+  ],
+  "detailed_results": [
+    {
+      "query": "CVE-2025-5066",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7337,
+        0.7213,
+        0.7073
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5065, Severity: MEDIUM, CVSS v4: None, CVSS v3: 6.5, CVSS v2: None, CWE ID: CWE-451, Description:, Inappropriate implementation in FileSystemAccess API in Google Chrome prior to 137.0...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5065",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-451"
+        }
+      },
+      "description": "Specific CVE ID lookup",
+      "top_k": 5
+    },
+    {
+      "query": "Chrome vulnerability 2025",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7659,
+        0.7553,
+        0.7451
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5065, Severity: MEDIUM, CVSS v4: None, CVSS v3: 6.5, CVSS v2: None, CWE ID: CWE-451, Description:, Inappropriate implementation in FileSystemAccess API in Google Chrome prior to 137.0...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5065",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-451"
+        }
+      },
+      "description": "Recent browser vulnerability",
+      "top_k": 5
+    },
+    {
+      "query": "SQL injection CVE",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7426,
+        0.7187,
+        0.717
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5216, Severity: MEDIUM, CVSS v4: 6.9, CVSS v3: 7.3, CVSS v2: 7.5, CWE ID: CWE-74, Description:, A vulnerability classified as critical was found in PHPGurukul Student Record System 3....",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5216",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-74"
+        }
+      },
+      "description": "SQL injection vulnerabilities",
+      "top_k": 5
+    },
+    {
+      "query": "buffer overflow vulnerability",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.6904,
+        0.6862,
+        0.686
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5051, Severity: MEDIUM, CVSS v4: 6.9, CVSS v3: 7.3, CVSS v2: 7.5, CWE ID: CWE-119, Description:, A vulnerability classified as critical has been found in FreeFloat FTP Server 1.0. Aff...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5051",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-119"
+        }
+      },
+      "description": "Buffer overflow CVEs",
+      "top_k": 5
+    },
+    {
+      "query": "remote code execution",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.5658,
+        0.5554,
+        0.5503
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5024, Severity: HIGH, CVSS v4: None, CVSS v3: 7.4, CVSS v2: None, CWE ID: CWE-400, Description:, A flaw was found in gnome-remote-desktop. Once gnome-remote-desktop listens for RDP co...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5024",
+          "severity": "HIGH",
+          "cwe_id": "CWE-400"
+        }
+      },
+      "description": "RCE vulnerabilities",
+      "top_k": 5
+    },
+    {
+      "query": "authentication bypass CVE",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.6378,
+        0.5975,
+        0.5968
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5190, Severity: HIGH, CVSS v4: None, CVSS v3: 8.8, CVSS v2: None, CWE ID: CWE-288, Description:, The Browse As plugin for WordPress is vulnerable to authentication bypass in versions ...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5190",
+          "severity": "HIGH",
+          "cwe_id": "CWE-288"
+        }
+      },
+      "description": "Authentication bypass vulnerabilities",
+      "top_k": 5
+    },
+    {
+      "query": "CWE-451",
+      "expected_type": "cwe",
+      "status": "FAIL",
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'",
+      "retrieved_count": 5,
+      "relevant_count": 0,
+      "relevance_score": 0.0,
+      "top_scores": [
+        0.6555,
+        0.6549,
+        0.6546
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5081, Severity: MEDIUM, CVSS v4: 6.9, CVSS v3: 9.8, CVSS v2: 7.5, CWE ID: CWE-74, Description:, A vulnerability classified as critical was found in Campcodes Cybercafe Management Syst...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5081",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-74"
+        }
+      },
+      "description": "Specific CWE ID lookup",
+      "top_k": 5
+    },
+    {
+      "query": "improper authentication weakness",
+      "expected_type": "cwe",
+      "status": "FAIL",
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'",
+      "retrieved_count": 5,
+      "relevant_count": 0,
+      "relevance_score": 0.0,
+      "top_scores": [
+        0.605,
+        0.5827,
+        0.577
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5190, Severity: HIGH, CVSS v4: None, CVSS v3: 8.8, CVSS v2: None, CWE ID: CWE-288, Description:, The Browse As plugin for WordPress is vulnerable to authentication bypass in versions ...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5190",
+          "severity": "HIGH",
+          "cwe_id": "CWE-288"
+        }
+      },
+      "description": "Authentication weakness pattern",
+      "top_k": 5
+    },
+    {
+      "query": "cross-site scripting weakness",
+      "expected_type": "cwe",
+      "status": "FAIL",
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'",
+      "retrieved_count": 5,
+      "relevant_count": 0,
+      "relevance_score": 0.0,
+      "top_scores": [
+        0.6535,
+        0.6535,
+        0.6529
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5266, Severity: MEDIUM, CVSS v4: None, CVSS v3: 6.5, CVSS v2: None, CWE ID: CWE-200, Description:, Script elements loading cross-origin resources generated load and error events which...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5266",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-200"
+        }
+      },
+      "description": "XSS weakness pattern",
+      "top_k": 5
+    },
+    {
+      "query": "CWE-79 XSS",
+      "expected_type": "cwe",
+      "status": "FAIL",
+      "reason": "Low relevance: only 0/5 results match expected type 'cwe'",
+      "retrieved_count": 5,
+      "relevant_count": 0,
+      "relevance_score": 0.0,
+      "top_scores": [
+        0.6795,
+        0.6757,
+        0.674
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5177, Severity: MEDIUM, CVSS v4: 5.3, CVSS v3: 4.3, CVSS v2: 5.0, CWE ID: CWE-79, Description:, A vulnerability was found in Realce Tecnologia Queue Ticket Kiosk up to 20250517. It ha...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5177",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-79"
+        }
+      },
+      "description": "Specific XSS CWE",
+      "top_k": 5
+    },
+    {
+      "query": "Alicia Mosquera",
+      "expected_type": "persona",
+      "status": "FAIL",
+      "reason": "Low relevance: only 2/5 results match expected type 'persona'",
+      "retrieved_count": 5,
+      "relevant_count": 2,
+      "relevance_score": 40.0,
+      "top_scores": [
+        0.4985,
+        0.4651,
+        0.4554
+      ],
+      "result_types": [
+        "persona",
+        "cve",
+        "cve",
+        "cve",
+        "persona"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Alicia Mosquera blends meticulous organization, heartfelt community service, and a love for traditional flavors, all while navigating the worries of age with disciplined routines and ...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "abd1d304fb8a45d8ab436f3131570d57",
+          "age": 78,
+          "sex": "Female",
+          "city": "Coalinga",
+          "state": "CA",
+          "country": "USA",
+          "occupation": "not_in_workforce"
+        }
+      },
+      "description": "Person by full name",
+      "top_k": 5
+    },
+    {
+      "query": "person in Coalinga California",
+      "expected_type": "persona",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.4124,
+        0.3871,
+        0.3861
+      ],
+      "result_types": [
+        "persona",
+        "persona",
+        "persona",
+        "persona",
+        "persona"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Kailea Rubel blends practical organization with Southern hospitality, juggling community events, a budding home bakery, and a disciplined budget, all while chasing garden blooms, quil...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "f2028fc8c5c84d31ac58327a561bd3b6",
+          "age": 49,
+          "sex": "Female",
+          "city": "Moss Point",
+          "state": "MS",
+          "country": "USA",
+          "occupation": "not_in_workforce"
+        }
+      },
+      "description": "Person by location",
+      "top_k": 5
+    },
+    {
+      "query": "William Wood",
+      "expected_type": "persona",
+      "status": "FAIL",
+      "reason": "Low relevance: only 0/5 results match expected type 'persona'",
+      "retrieved_count": 5,
+      "relevant_count": 0,
+      "relevance_score": 0.0,
+      "top_scores": [
+        0.4285,
+        0.4276,
+        0.4264
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5065, Severity: MEDIUM, CVSS v4: None, CVSS v3: 6.5, CVSS v2: None, CWE ID: CWE-451, Description:, Inappropriate implementation in FileSystemAccess API in Google Chrome prior to 137.0...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5065",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-451"
+        }
+      },
+      "description": "Another person by name",
+      "top_k": 5
+    },
+    {
+      "query": "Sean Buckley Irish",
+      "expected_type": "persona",
+      "status": "FAIL",
+      "reason": "Low relevance: only 2/5 results match expected type 'persona'",
+      "retrieved_count": 5,
+      "relevant_count": 2,
+      "relevance_score": 40.0,
+      "top_scores": [
+        0.3674,
+        0.3502,
+        0.3451
+      ],
+      "result_types": [
+        "persona",
+        "cve",
+        "cve",
+        "cve",
+        "persona"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Sean Buckley is a methodical software veteran who balances a passion for reliable code, rugged outdoor pursuits, classic‑rock listening, and perfecting woodworking projects, while occ...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "255a519d8d6e4460b3beeab84c08be55",
+          "age": 50,
+          "sex": "Male",
+          "city": "Livingston",
+          "state": "MT",
+          "country": "USA",
+          "occupation": "software_developer"
+        }
+      },
+      "description": "Person by name and nationality",
+      "top_k": 5
+    },
+    {
+      "query": "Kim Boissiere",
+      "expected_type": "persona",
+      "status": "FAIL",
+      "reason": "Low relevance: only 1/5 results match expected type 'persona'",
+      "retrieved_count": 5,
+      "relevant_count": 1,
+      "relevance_score": 20.0,
+      "top_scores": [
+        0.456,
+        0.4547,
+        0.4502
+      ],
+      "result_types": [
+        "persona",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Nhan Issaboube is a methodical 7‑year‑old who channels a love for structure into LEGO builds, puzzles, and quiet reading, balancing a shy disposition with a quietly assertive streak a...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "2514b1dd5536430d8f504e5057293c2e",
+          "age": 7,
+          "sex": "Female",
+          "city": "Lawrenceville",
+          "state": "GA",
+          "country": "USA",
+          "occupation": "not_in_workforce"
+        }
+      },
+      "description": "Person associated with email",
+      "top_k": 5
+    },
+    {
+      "query": "retired person who gardens",
+      "expected_type": "persona",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.5043,
+        0.472,
+        0.4684
+      ],
+      "result_types": [
+        "persona",
+        "persona",
+        "persona",
+        "persona",
+        "persona"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Pedro Jimenez, a 75‑year‑old garden‑loving handyman, balances meticulous budgeting with occasional splurges, confronts hypertension with disciplined monitoring yet skips therapy out o...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "d59a8cf61ec54de199a3640e506ae608",
+          "age": 75,
+          "sex": "Male",
+          "city": "Puyallup",
+          "state": "WA",
+          "country": "USA",
+          "occupation": "not_in_workforce"
+        }
+      },
+      "description": "Person by characteristics",
+      "top_k": 5
+    },
+    {
+      "query": "female 78 years old California",
+      "expected_type": "persona",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.4636,
+        0.4636,
+        0.4591
+      ],
+      "result_types": [
+        "persona",
+        "persona",
+        "persona",
+        "persona",
+        "persona"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Alicia Mosquera blends meticulous organization, heartfelt community service, and a love for traditional flavors, all while navigating the worries of age with disciplined routines and ...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "abd1d304fb8a45d8ab436f3131570d57",
+          "age": 78,
+          "sex": "Female",
+          "city": "Coalinga",
+          "state": "CA",
+          "country": "USA",
+          "occupation": "not_in_workforce"
+        }
+      },
+      "description": "Person by demographics",
+      "top_k": 5
+    },
+    {
+      "query": "security vulnerability in FTP server",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7278,
+        0.7174,
+        0.7144
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5331, Severity: MEDIUM, CVSS v4: 6.9, CVSS v3: 7.3, CVSS v2: 7.5, CWE ID: CWE-119, Description:, A vulnerability has been found in PCMan FTP Server 2.0.7 and classified as critical. T...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5331",
+          "severity": "MEDIUM",
+          "cwe_id": "CWE-119"
+        }
+      },
+      "description": "Generic security query (should return CVE)",
+      "top_k": 5
+    },
+    {
+      "query": "expert in cybersecurity",
+      "expected_type": "persona",
+      "status": "FAIL",
+      "reason": "Low relevance: only 1/5 results match expected type 'persona'",
+      "retrieved_count": 5,
+      "relevant_count": 1,
+      "relevance_score": 20.0,
+      "top_scores": [
+        0.5076,
+        0.4862,
+        0.4851
+      ],
+      "result_types": [
+        "persona",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "General Persona: Kennedi Terry blends a steadfast love for routine with a surprising dash of spontaneity, juggling meticulous network documentation and garden watering schedules while occasionally imp...",
+        "metadata": {
+          "type": "persona",
+          "source": "persona",
+          "uuid": "f00db7d331e74b86a2491741396a9644",
+          "age": 40,
+          "sex": "Female",
+          "city": "Glassboro",
+          "state": "NJ",
+          "country": "USA",
+          "occupation": "network_or_computer_systems_administrator"
+        }
+      },
+      "description": "Expertise query (should return persona)",
+      "top_k": 5
+    },
+    {
+      "query": "D-Link device vulnerability",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7061,
+        0.6766,
+        0.5878
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5228, Severity: HIGH, CVSS v4: 8.7, CVSS v3: 8.8, CVSS v2: 8.3, CWE ID: CWE-119, Description:, A vulnerability was found in D-Link DI-8100 up to 20250523. It has been classified as cr...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5228",
+          "severity": "HIGH",
+          "cwe_id": "CWE-119"
+        }
+      },
+      "description": "Vendor-specific vulnerability",
+      "top_k": 5
+    },
+    {
+      "query": "Filmora 14.5.16 security issue",
+      "expected_type": "cve",
+      "status": "PASS",
+      "reason": "Perfect match: all results are relevant",
+      "retrieved_count": 5,
+      "relevant_count": 5,
+      "relevance_score": 100.0,
+      "top_scores": [
+        0.7351,
+        0.6189,
+        0.6121
+      ],
+      "result_types": [
+        "cve",
+        "cve",
+        "cve",
+        "cve",
+        "cve"
+      ],
+      "sample_result": {
+        "text_preview": "CVE ID: CVE-2025-5180, Severity: HIGH, CVSS v4: 7.3, CVSS v3: 7.0, CVSS v2: 6.0, CWE ID: CWE-426, Description:, A vulnerability, which was classified as critical, has been found in Wondershare Filmora...",
+        "metadata": {
+          "type": "cve",
+          "source": "cve",
+          "cve_id": "CVE-2025-5180",
+          "severity": "HIGH",
+          "cwe_id": "CWE-426"
+        }
+      },
+      "description": "Software-specific security",
+      "top_k": 5
+    }
+  ]
+}
