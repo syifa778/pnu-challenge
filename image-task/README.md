@@ -1,6 +1,4 @@
-# PNU CHALLENGE : IMAGE TASK
-
-## Car Retrieval System Using Object Detection and Car Type Classification
+# Car Retrieval System Using Object Detection and Car Type Classification
 This work presents the development of an end-to-end Car Retrieval System that integrates object detection and car type classification. The system is designed to detect multiple car instances in real-world scenes and classify each detected vehicle into one of several car types commonly found in Indonesia, such as Sedan, MPV, SUV, Pickup, Truck, and Bus. Two different paradigms are explored for each task: convolutional neural network (CNN)-based models and attention-based models. The proposed system is trained and evaluated on the COCO 2017 dataset for object detection task and Indonesia Traffic CCTV for both tasks to demonstrate its effectiveness and practical applicability.
 
 ## Quick Result Overview
