@@ -1,4 +1,5 @@
-# PNU CHALLENGE : LLM TASK
+# Retrieval Augmented Generation (RAG) System for Cybersecurity CVE and Personal Information
+This work presents the design, implementation, and evaluation of Retrieval Augment Generation (RAG) system integrated with Large Language Model (LLM). The system utilizes two distinct datasets: cybersecurity vulnerability data (CVE/CWE) and personal information. While the RAG architecture is designed to retrieve data from both sources, a primary constraint is ensuring the LLM does not leak sensitive personal information within its generated outputs.
 
 ## CVE - CWE and Personas Data Preparation
 ```bash
